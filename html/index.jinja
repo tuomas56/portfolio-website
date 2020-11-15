@@ -1,0 +1,32 @@
+{%macro icon(name, class="mr-2") -%}
+    <svg class="{{class}}" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#{{name}}"/></svg>
+{%- endmacro %}
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="styles.css">
+        <title>Tuomas Laakkonen</title>
+    </head>
+    <body class="position-relative" data-spy="scroll" data-offset="100" data-target="#navbar" data-offset="0">
+        {%include "nav.jinja" %}
+
+        <div class="container">
+            {%include "intro.jinja" %}
+
+            {%include "projects.jinja" %}
+
+            {%include "education.jinja" %}
+
+            {%include "experience.jinja" %}
+
+            {%include "skills.jinja" %}
+
+            {%include "footer.jinja" %}
+        </div>
+
+        <script type="text/javascript" src="bundle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+$theme-colors: (
+    "primary":#FF6188,
+    "secondary":#AB9DF2,
+    "success": #A9DC76,
+    "info": #78DCE8,
+    "warning": #FFD866,
+    "danger": #FC9867,
+    "light": #FFFFFF,
+    "dark":#2D2A2E
+);
+
+$body-bg: #2D2A2E;
+$body-color: #FFFFFF;
+
+$headings-font-family: 'Fira Code', 'Consolas', monospace;
+$font-family-monospace: 'Fire Code', 'Consolas', monospace;
+$font-family-base: 'Roboto', -apple-system, sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Roboto&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+#navbar {
+    transition: box-shadow 200ms ease-in-out;
+}
+
+.nav-link:not(.active) {
+    color: rgba(255, 255, 255, 0.5) !important
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.75) !important
+}
+

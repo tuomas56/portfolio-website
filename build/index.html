@@ -1,0 +1,505 @@
+
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="styles.css">
+        <title>Tuomas Laakkonen</title>
+    </head>
+    <body class="position-relative" data-spy="scroll" data-offset="100" data-target="#navbar" data-offset="0">
+        <nav id="navbar" class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link navbar-brand mb-0 h1" href="#cv">CV</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link navbar-brand mb-0 h1" href="#projects">
+                    Projects
+                    <a class="nav-link navbar-brand mb-0 ml-n4 h1" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#caret-down-fill"/></svg>
+                    </a>
+                </a>
+                
+                <div class="dropdown-menu shadow bg-dark" aria-labelledby="dropdownMenuLink">
+                    <a class="nav-link navbar-brand mb-0 ml-2 h1" onclick="document.getElementById('rust').scrollIntoView();">Rust</a>
+                    <a class="nav-link navbar-brand mb-0 ml-2 h1" onclick="document.getElementById('haskell').scrollIntoView();">Haskell</a>
+                    <a class="nav-link navbar-brand mb-0 ml-2 h1" onclick="document.getElementById('python').scrollIntoView();">Python</a>
+                    <a class="nav-link navbar-brand mb-0 ml-2 h1" onclick="document.getElementById('javascript').scrollIntoView();">Javascript</a>
+                    <a class="nav-link navbar-brand mb-0 ml-2 h1" onclick="document.getElementById('other').scrollIntoView();">Other</a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link navbar-brand mb-0 h1" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link navbar-brand mb-0 h1" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link navbar-brand mb-0 h1" href="#skills">Skills</a></li>
+        </div>
+    </div>
+</nav>
+
+        <div class="container">
+            <div id="cv" class="p-5"></div>
+
+<div class="jumbotron bg-light shadow text-dark">
+    <h1 class="display-4 text-center">Tuomas Laakkonen</h1>
+    <p class="lead"></p>
+    <p></p>
+    <div class="d-flex justify-content-center">
+        <a class="btn btn-dark btn-lg" href="files/Tuomas_Laakkonen_CV.pdf" target="_blank" role="button"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#download"/></svg> Download CV</a>
+        <a class="btn btn-dark btn-lg ml-2" href="mailto:tuomas.laakkonen18@imperial.ac.uk" role="button"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#envelope"/></svg> Contact Me</a>
+    </div>
+</div>
+
+            
+
+<div id="projects" class="p-5"></div>
+
+<h1>Projects</h1>
+<div id="rust" class="p-4"></div>
+<h2 class="text-muted">Rust</h2>
+<div class="card-columns">
+    <div class="card shadow">
+        <img src="images/os2_rust.png" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">OS Project</h5>
+            <p class="card-text">A hobby OS project for 32-bit x86, currently capable of running simple ELF files. Has drivers for VGA Text Mode, Serial, PC Speaker and PS/2 Keyboards.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/rust/os2r" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/raytrace_rust.png" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Raytracer</h5>
+            <p class="card-text">A parallel raytracer supporting environment maps, shadows, emissive objects, and diffuse, glossy, and reflective materials.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/rust/raytracer" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/gedit_rust.mov.gif" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">ECS Editor</h5>
+            <p class="card-text">A prototype editor for the Pixelengine library that uses ECS architecture, custom GUI library and macros to generate controls automatically from data structures.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/rust/geditor" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/planets_rust.mov.gif" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">World Generator</h5>
+            <p class="card-text">A program to generate and render planets in OpenGL using Perlin noise and ray marching.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/rns_rust.mov.gif" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Quadratic Sieve</h5>
+            <p class="card-text">An implementation of the quadratic sieve integer factorization algorithm. Has been successfully used to factor 60 digit semiprimes.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/rust/primes" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/platformer_rust.mov.gif" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Pixelengine</h5>
+            <p class="card-text">A port of the Processing framework to Rust in OpenGL. Shown is an example platforming game that uses GLSL shader post-processing to achieve a Neon/CRT aesthetic.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/rust/pixelengine" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/physics_rust.mov.gif" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Physics Engine</h5>
+            <p class="card-text">A 2D physics library, using a quadtree for efficient collisions with static objects.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/rust/physics" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/m1r_rust.png" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Gillespie's SSA</h5>
+            <p class="card-text">An implementation of Gillespie's direct method, accelerated with LLVM.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/rust/m1r" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+</div>
+<div id="haskell" class="p-5"></div>
+<h2 class="text-muted">Haskell</h2>
+<div class="card-columns">
+    <div class="card shadow">
+        <img src="images/cas_haskell.mov.gif" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">AME</h5>
+            <p class="card-text">A computer algebra system with natural language input designed for A-level students.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/haskell/ame" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/hask_haskell.png" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Hask</h5>
+            <p class="card-text">An interpreter for a dynamically typed functional language with similar syntax to Haskell.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/haskell/hask" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+</div>
+<div id="python" class="p-5"></div>
+<h2 class="text-muted">Python</h2>
+<div class="card-columns">
+    <div class="card shadow">
+        <img src="images/pyre_python.png" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Pyre</h5>
+            <p class="card-text">An interpreted expression-oriented language with Python interoperability.</p>
+            
+            <a href="https://github.com/tuomas56/pyre" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/min_python.png" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Min</h5>
+            <p class="card-text">A prototype compiler for a systems language.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/python/min" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/proof_python.png" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Exponential Identities</h5>
+            <p class="card-text">A program to automatically create proofs or counterexamples for a class of exponential identites.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/python/exponentials" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/sorting_processing.mov.gif" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Sort Visualizer</h5>
+            <p class="card-text">A visualization of different sorting algorithms. Pictured is in-place merge sort.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/processing/sorting.pyde" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/fluid_processing.mov.gif" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Fluid Simulation</h5>
+            <p class="card-text">Fluid simulation using diffusion and advection of a pressure field.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/processing/fluid.pyde" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/3d_processing.mov.gif" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">2D to 3D</h5>
+            <p class="card-text">A program to render 3D environments from 2D maps in software.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/processing/3d.pyde" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/drag_processing.mov.gif" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Drag Simulation</h5>
+            <p class="card-text">A program to simulate the drag of fluid on a moving object.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/processing/water.pyde" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/epqat_python.mov.gif" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Zombie Hordes</h5>
+            <p class="card-text">An infinite shooter and platformer game.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/python/epqat" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/rotate_processing.mov.gif" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Rotation Simulation</h5>
+            <p class="card-text">A simulation of applying forces to a rotating object using moments.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/processing/rotate.pyde" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/poisson_processing.mov.gif" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Poisson Disc Sampling</h5>
+            <p class="card-text">An illustration of the Poisson disc sampling method.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/processing/poisson.pyde" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+</div>
+<div id="javascript" class="p-5"></div>
+<h2 class="text-muted">JavaScript</h2>
+<div class="card-columns">
+    <div class="card shadow">
+        <img src="images/papers_js.png" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Paper Search</h5>
+            <p class="card-text">A web app to search for A-level Maths past papers, designed to help with revision. Live <a class="text-muted" href="http://tuomas56.github.io/">here</a>.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/js/papers" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/ficsave_js.png" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Ficsave</h5>
+            <p class="card-text">A Chrome extension to download eBooks automatically from AO3 and FFN via FicSave.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/blob/master/js/ficsave-chrome" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+</div>
+<div id="other" class="p-5"></div>
+<h2 class="text-muted">Other</h2>
+<div class="card-columns">
+    <div class="card shadow">
+        <img src="images/clock_swift.png" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">Time Zone Clock</h5>
+            <p class="card-text">A Mac application in Swift to graphically convert between time zones.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio/tree/master/swift/Time%20Zone%20Clock" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/website_html.png" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">This Website</h5>
+            <p class="card-text">Designed from scratch using Bootstrap, Jinja, Sass and JavaScript.</p>
+            
+            <a href="https://github.com/tuomas56/portfolio-website" target="_blank" class="btn btn-light"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#file-earmark-code"/></svg> See The Code</a>
+            
+        </div>
+    </div>
+</div>
+<div id="electronics" class="p-5"></div>
+<h2 class="text-muted">Digital Electronics</h2>
+<div class="card-columns">
+    <div class="card shadow">
+        <img src="images/atmega_electronics.png" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">ATmega4809 Dev Board</h5>
+            <p class="card-text">A breakout and development board for the Atmel ATmega4809-PF MCU. Supports USB-Serial and I2C via the MCP2221A. Includes USB and DC power inputs with regulation.</p>
+            
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/6502_electronics.png" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">6502 Computer</h5>
+            <p class="card-text">A 65C02-based single board computer with 32k RAM and 24k ROM. Has an expansion port for an ATmega4809-based video card and PS/2 keyboard input interfacing via a 65C22.</p>
+            
+            
+        </div>
+    </div>
+    <div class="card shadow">
+        <img src="images/spi_electronics.png" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">TinyCLR Adapter</h5>
+            <p class="card-text">An adapter to convert GHI TinyCLR board sockets to be Arduino compatible.</p>
+            
+            
+        </div>
+    </div>
+</div>
+
+            <div id="education" class="p-5"></div>
+
+<h1>Education</h1>
+
+<div class="row d-flex align-items-stretch">
+    <div class="col-lg mb-4">
+        <div class="card shadow text-dark h-100">
+            <div class="card-body">
+                <h5 class="card-title">Imperial College London</h5>
+                <h6 class="card-subtitle mb-2 text-muted">BSc Mathematics (2018-present)</h6>
+                <ul class="card-text ml-n4">
+                    <li>Second year grade: 1st class (75.8% average).</li>
+                    <li>Current modules include: <ul class="ml-n3">
+                        <li>Computational Linear Algebra</li>
+                        <li>Stochastic Simulation</li>
+                        <li>Numerical Methods for ODEs</li>
+                    </ul></li>
+                    <li>Previous modules covered include: <ul class="ml-n3">
+                        <li>Mathematical Computation (94%),</li>
+                        <li>Individual computational (99%) and Group (86%) Projects,</li>
+                        <li>Linear Algebra (92%) and Multivariable Calculus (93%).</li>
+                    </ul></li>
+                </ul>
+            </div>
+
+            <ul class="list-group list-group-flush">
+                <a class="list-group-item btn btn-block bg-dark btn-dark" href="files/Tuomas_Laakkonen_Transcript.pdf" target="_blank" style="border-top-left-radius: 0; border-top-right-radius: 0">
+                        <svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#download"/></svg> Full Transcript
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-lg mb-4">
+        <div class="card shadow text-dark h-100">
+            <div class="card-body">
+                <h5 class="card-title">Marlborough College</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Academic Scholar (2013-2018)</h6>
+                <ul class="card-text ml-n4">
+                    <li>A Levels: <ul class="ml-n3">
+                        <li>4 A*'s and 1 A in Mathematics, Further Mathematics, Computer Science, Physics and Chemistry respectively.</li>
+                        <li>A* in an EPQ related to Computer Science and AI.</li>
+                    </ul></li>
+                    <li> GCSEs: 10 A*s and 2 As including A*s in Mathematics, Computer Science, and triple Science and an A in Electronics. </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div id="experience" class="p-5"></div>
+
+<h1>Experience</h1>
+
+<div class="card shadow text-dark">
+    <div class="card-body">
+        <h5 class="card-title">Blueshift Coding</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Content Creation Intern (2020 August-October)</h6>
+        Created content to be used to teach programming in lessons, clubs, and private tutoring. Responsibilities included:
+        <ul class="card-text ml-n4">
+            <li> Development of sample code in Python, Processing and Scratch,</li>
+            <li> Writing lesson plans and presentations for use by teachers,</li>
+            <li> Putting together paper resources and robotics equipment for classes. </li>
+        </ul>
+    </div>
+</div>
+
+            <div id="skills" class="p-5"></div>
+
+<h1>Programming Language Skills</h1>
+
+<div class="list-group shadow">
+    <div class="list-group-item">
+        <div class="d-flex justify-content-between w-100">
+            <div>
+                <h5 class="mb-1 text-dark">Rust</h5>
+                <h6 class="text-muted">10k+ lines written<br/>3 years experience</h6>
+            </div>
+            <div>
+                <a role="button" class="btn btn-dark h-100 d-flex align-items-center" href="#rust"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#arrow-up"/></svg> See Projects</a>
+            </div>
+        </div>
+        <p class="text-dark">
+            Other projects not listed above include:
+            <ul class="ml-n4 mt-n3 text-dark">
+                <li>A compiler for a statically-typed systems language with user definable operators and inline assembly,</li>
+                <li>An OpenGL project to render text directly on the GPU from Bezier curve data using geometry shaders,</li>
+                <li>Interpreters for Basic and Lisp,</li>
+                <li>An implementation of the AES encryption system,</li>
+                <li>Parsers for various binary formats, including the FAT file system, the Multiboot 2 specification, EDID data and ACPI tables.</li>
+            </ul>
+        </p>
+    </div>
+    <div class="list-group-item">
+        <div class="d-flex justify-content-between w-100">
+            <div>
+                <h5 class="mb-1 text-dark">Haskell</h5>
+                <h6 class="text-muted">10k+ lines written<br/>3 years experience</h6>
+            </div>
+            <div>
+                <a role="button" class="btn btn-dark h-100 d-flex align-items-center" href="#haskell"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#arrow-up"/></svg> See Projects</a>
+            </div>
+        </div>
+        <p class="text-dark">Other projects not listed above include:</p>
+        <ul class="ml-n4 mt-n3 text-dark">
+            <li> A regular expression engine, and a parser combinator library,</li>
+            <li> An implementation of Lisp, and a prototype language compiling to C,</li>
+            <li> A library to compute exact derivatives of functions automatically, </li>
+            <li> A library to compute probability distributions and extrapolate series. </li>
+        </ul>
+    </div>
+    <div class="list-group-item">
+        <div class="d-flex justify-content-between w-100">
+            <div>
+                <h5 class="mb-1 text-dark">Python</h5>
+                <h6 class="text-muted">10k+ lines written<br/>6 years experience</h6>
+            </div>
+            <div>
+                <a role="button" class="btn btn-dark h-100 d-flex align-items-center" href="#python"><svg class="mr-2" width="1em" height="1em" fill="currentColor"><use xlink:href="bootstrap-icons.svg#arrow-up"/></svg> See Projects</a>
+            </div>
+        </div>
+        <p class="text-dark">Other projects not listed above include:</p>
+        <ul class="ml-n4 mt-n3 text-dark">
+            <li> A library extending Python to add algebraic data types using metaclasses, and adding functional programming methods to built-in types. </li>
+            <li> A program to derive Markov chains from text data, </li>
+            <li> A compiler for a language using LLVM, various Lisp interpreters, </li>
+            <li> A program to solve Sudoku puzzles efficiently, </li>
+            <li> An art program that uses the touchpad of a Macbook as a drawing tablet. </li>
+        </ul>
+    </div>
+    <div class="list-group-item">
+        <div class="d-flex justify-content-between w-100">
+            <h5 class="mb-1 text-dark">Others</h5>
+        </div>
+        <ul class="ml-n4 mt-n1 text-dark">
+            <li> Go (3k lines written, 1 year experience): A hobby operating system project. </li>
+            <li> Assembly (2k lines written): A Lisp interpreter for x86, a calculator for 6502, and a VGA video generator for AVR, </li>
+            <li> Verilog: A CPU using the one instruction set SUBLEQ architecture, and a more traditional 8-bit CPU. </li>
+            <li> C: A hobby operating system project. </li>
+            <li> C++: An indoor positioning project for Arduino using Wi-Fi, Accelerometer and Barometer data to determine position. Included a GUI component using a resistive touch screen. Developed as part of an Engineering Education Scheme project supervised by Intel. We came first in the south west region and won a CREST Gold award for the project.</li>
+        </ul>
+    </div>
+</div>
+
+            <div class="mt-5 mb-5">
+<small class="text-muted">
+    Designed by Tuomas Laakkonen and built using <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" class="text-light">Bootstrap v4</a>, <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" class="text-light">Bootstrap Icons</a>, and <a href="https://github.com/jquery/jquery/blob/master/LICENSE.txt" class="text-light">jQuery</a>, for which the licenses are linked.
+</small>
+</div>
+        </div>
+
+        <script type="text/javascript" src="bundle.js"></script>
+    </body>
+</html>

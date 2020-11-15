@@ -1,0 +1,68 @@
+{%macro project(name, description, code, image) -%}
+    <div class="card shadow">
+        <img src="{{image}}" class="card-img-top">
+        <div class="card-body bg-dark">
+            <h5 class="card-title">{{name}}</h5>
+            <p class="card-text">{{description}}</p>
+            {% if code is none %}
+            {% else %}
+            <a href="{{code}}" target="_blank" class="btn btn-light">{{ icon("file-earmark-code") }} See The Code</a>
+            {% endif %}
+        </div>
+    </div>
+{%- endmacro %}
+
+<div id="projects" class="p-5"></div>
+
+<h1>Projects</h1>
+<div id="rust" class="p-4"></div>
+<h2 class="text-muted">Rust</h2>
+<div class="card-columns">
+    {{ project("OS Project", "A hobby OS project for 32-bit x86, currently capable of running simple ELF files. Has drivers for VGA Text Mode, Serial, PC Speaker and PS/2 Keyboards.", "https://github.com/tuomas56/portfolio/blob/master/rust/os2r", "images/os2_rust.png") }}
+    {{ project("Raytracer", "A parallel raytracer supporting environment maps, shadows, emissive objects, and diffuse, glossy, and reflective materials.", "https://github.com/tuomas56/portfolio/blob/master/rust/raytracer", "images/raytrace_rust.png") }}
+    {{ project("ECS Editor", "A prototype editor for the Pixelengine library that uses ECS architecture, custom GUI library and macros to generate controls automatically from data structures.", "https://github.com/tuomas56/portfolio/blob/master/rust/geditor", "images/gedit_rust.mov.gif") }}
+    {{ project("World Generator", "A program to generate and render planets in OpenGL using Perlin noise and ray marching.", "https://github.com/tuomas56/portfolio", "images/planets_rust.mov.gif") }}
+    {{ project("Quadratic Sieve", "An implementation of the quadratic sieve integer factorization algorithm. Has been successfully used to factor 60 digit semiprimes.", "https://github.com/tuomas56/portfolio/blob/master/rust/primes", "images/rns_rust.mov.gif") }}
+    {{ project("Pixelengine", "A port of the Processing framework to Rust in OpenGL. Shown is an example platforming game that uses GLSL shader post-processing to achieve a Neon/CRT aesthetic.", "https://github.com/tuomas56/portfolio/blob/master/rust/pixelengine", "images/platformer_rust.mov.gif") }}
+    {{ project("Physics Engine", "A 2D physics library, using a quadtree for efficient collisions with static objects.", "https://github.com/tuomas56/portfolio/blob/master/rust/physics", "images/physics_rust.mov.gif") }}
+    {{ project("Gillespie's SSA", "An implementation of Gillespie's direct method, accelerated with LLVM.", "https://github.com/tuomas56/portfolio/blob/master/rust/m1r", "images/m1r_rust.png") }}
+</div>
+<div id="haskell" class="p-5"></div>
+<h2 class="text-muted">Haskell</h2>
+<div class="card-columns">
+    {{ project("AME", "A computer algebra system with natural language input designed for A-level students.", "https://github.com/tuomas56/portfolio/blob/master/haskell/ame", "images/cas_haskell.mov.gif") }}
+    {{ project("Hask", "An interpreter for a dynamically typed functional language with similar syntax to Haskell.", "https://github.com/tuomas56/portfolio/blob/master/haskell/hask", "images/hask_haskell.png") }}
+</div>
+<div id="python" class="p-5"></div>
+<h2 class="text-muted">Python</h2>
+<div class="card-columns">
+    {{ project("Pyre", "An interpreted expression-oriented language with Python interoperability.", "https://github.com/tuomas56/pyre", "images/pyre_python.png") }}
+    {{ project("Min", "A prototype compiler for a systems language.", "https://github.com/tuomas56/portfolio/blob/master/python/min", "images/min_python.png") }}
+    {{ project("Exponential Identities", "A program to automatically create proofs or counterexamples for a class of exponential identites.", "https://github.com/tuomas56/portfolio/blob/master/python/exponentials", "images/proof_python.png") }}
+    {{ project("Sort Visualizer", "A visualization of different sorting algorithms. Pictured is in-place merge sort.", "https://github.com/tuomas56/portfolio/blob/master/processing/sorting.pyde", "images/sorting_processing.mov.gif") }}
+    {{ project("Fluid Simulation", "Fluid simulation using diffusion and advection of a pressure field.", "https://github.com/tuomas56/portfolio/blob/master/processing/fluid.pyde", "images/fluid_processing.mov.gif") }}
+    {{ project("2D to 3D", "A program to render 3D environments from 2D maps in software.", "https://github.com/tuomas56/portfolio/blob/master/processing/3d.pyde", "images/3d_processing.mov.gif") }}
+    {{ project("Drag Simulation", "A program to simulate the drag of fluid on a moving object.", "https://github.com/tuomas56/portfolio/blob/master/processing/water.pyde", "images/drag_processing.mov.gif") }}
+    {{ project("Zombie Hordes", "An infinite shooter and platformer game.", "https://github.com/tuomas56/portfolio/blob/master/python/epqat", "images/epqat_python.mov.gif") }}
+    {{ project("Rotation Simulation", "A simulation of applying forces to a rotating object using moments.", "https://github.com/tuomas56/portfolio/blob/master/processing/rotate.pyde", "images/rotate_processing.mov.gif") }}
+    {{ project("Poisson Disc Sampling", "An illustration of the Poisson disc sampling method.", "https://github.com/tuomas56/portfolio/blob/master/processing/poisson.pyde", "images/poisson_processing.mov.gif") }}
+</div>
+<div id="javascript" class="p-5"></div>
+<h2 class="text-muted">JavaScript</h2>
+<div class="card-columns">
+    {{ project("Paper Search", "A web app to search for A-level Maths past papers, designed to help with revision. Live <a class=\"text-muted\" href=\"http://tuomas56.github.io/\">here</a>.", "https://github.com/tuomas56/portfolio/blob/master/js/papers", "images/papers_js.png") }}
+    {{ project("Ficsave", "A Chrome extension to download eBooks automatically from AO3 and FFN via FicSave.", "https://github.com/tuomas56/portfolio/blob/master/js/ficsave-chrome", "images/ficsave_js.png") }}
+</div>
+<div id="other" class="p-5"></div>
+<h2 class="text-muted">Other</h2>
+<div class="card-columns">
+    {{ project("Time Zone Clock", "A Mac application in Swift to graphically convert between time zones.", "https://github.com/tuomas56/portfolio/tree/master/swift/Time%20Zone%20Clock", "images/clock_swift.png") }}
+    {{ project("This Website", "Designed from scratch using Bootstrap, Jinja, Sass and JavaScript.", "https://github.com/tuomas56/portfolio-website", "images/website_html.png") }}
+</div>
+<div id="electronics" class="p-5"></div>
+<h2 class="text-muted">Digital Electronics</h2>
+<div class="card-columns">
+    {{ project("ATmega4809 Dev Board", "A breakout and development board for the Atmel ATmega4809-PF MCU. Supports USB-Serial and I2C via the MCP2221A. Includes USB and DC power inputs with regulation.", None, "images/atmega_electronics.png") }}
+    {{ project("6502 Computer", "A 65C02-based single board computer with 32k RAM and 24k ROM. Has an expansion port for an ATmega4809-based video card and PS/2 keyboard input interfacing via a 65C22.", None, "images/6502_electronics.png") }}
+    {{ project("TinyCLR Adapter", "An adapter to convert GHI TinyCLR board sockets to be Arduino compatible.", None, "images/spi_electronics.png") }}
+</div>
